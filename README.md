@@ -9,4 +9,5 @@ github上面有项目源码 已经上传, this link: https://github.com/Tiramisu
 conda create -c conda-forge -n mindspore_py38 -c conda-forge python=3.8.0
 conda activate mindspore_py38
 conda install mindspore-cpu=2.1.1 -c mindspore -c conda-forge
+python -c "import mindspore;mindspore.set_context(device_target='CPU');mindspore.run_check()"
 ```
